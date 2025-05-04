@@ -2,7 +2,7 @@
 /plugin/;
 
 / {
-	compatible = "sinovoip,bpi-m4-zero", "allwinner,sun50i-h616", "allwinner,sun50i-h618";
+	compatible = "allwinner,sun50i-h616", "allwinner,sun50i-h618";
 
 	fragment@0 {
 		target = <&spi1>;
@@ -10,7 +10,6 @@
 			status = "okay";
 			#address-cells = <1>;
 			#size-cells = <0>;
-
 			pinctrl-names = "default";
 			pinctrl-0 = <&spi1_pins>, <&spi1_cs0_pin>, <&spi1_cs1_pin>;
 

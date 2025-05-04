@@ -219,18 +219,6 @@
 	};
 };
 
-&spi1 {
-	status = "disabled";
-	pinctrl-0 = <&spi1_pins>, <&spi1_cs1_pin>;
-	pinctrl-names = "default";
-
-	spidev@1 {
-		compatible = "rohm,dh2228fv";
-		reg = <1>;
-		spi-max-frequency = <1000000>;
-	};
-};
-
 &uart0 {
 	status = "okay";
 	pinctrl-0 = <&uart0_ph_pins>;
