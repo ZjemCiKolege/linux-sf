@@ -354,6 +354,10 @@
 	status = "okay";
 };
 
+&ahub_dam_mach {
+	status = "okay";
+};
+
 &ahub1_plat {
 	status = "okay";
 };
